@@ -8,9 +8,9 @@ public:
 		this->height = height;
 
 		//meshCube.LoadFromObjectFile("beaver.obj");
-		meshCube.LoadFromObjectFile("spaceShip.obj");
+		//meshCube.LoadFromObjectFile("spaceShip.obj");
 
-		//meshCube.UseMathFormula();
+		meshCube.UseMathFormula();
 
 		fTheta = 0.0f;
 		vCamera = { 0.0f, 0.0f, 0.0f };
@@ -337,7 +337,7 @@ public:
 
 		vForward = Vector_Mul(vLookDir, cameraMoveSpeed * fElapsedTime);
 		mat4x4 matRotZ, matRotX, matRotY;
-		fTheta += 1.0f * fElapsedTime;
+		//fTheta += 1.0f * fElapsedTime;
 
 		//matRotX = Matrix_MakeRotationX(fTheta);
 		matRotZ = Matrix_MakeRotationZ(fTheta);
